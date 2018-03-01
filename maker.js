@@ -13,7 +13,6 @@ var makeDots = function() {
   console.log(event.offsetX);
   console.log(event.offsetY);
   c1.setAttribute("r", 30);
-  c1.setAttribute("stroke", "#000000");
   c1.setAttribute("fill", "green")
   svg.appendChild(c1);
   if (!first) {
@@ -25,9 +24,7 @@ var makeDots = function() {
     l1.setAttribute("stroke", "#000000");
     svg.appendChild(l1);
   }
-  else {
-    first = 0;
-  }
+  first = 0;
   old_x = event.clientX
   old_y = event.clientY
 }
