@@ -5,7 +5,7 @@ var c1, l1, old_x, old_y;
 var first = 1;
 
 
-var makeDots = function() {
+var makeDots = function(event) {
   console.log("making dot");
   c1 = document.createElementNS("http://www.w3.org/2000/svg", "circle");
   c1.setAttribute("cx", event.offsetX);
